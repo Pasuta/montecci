@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Innovecs test 2017</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta charset="UTF-8">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <link href="assets/css/modern.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+    <script data-main="js/index" src="js/require.js"></script>
+</head>
+
+<body class="page-header-fixed">
+    <main class="page-content content-wrap">
+        <div class="page-inner">
+            <div class="page-title">
+                <h3>La tragedia eccellentissima e lamentevolissima di Romeo e Giulietta</h3>
+            </div>
+            <div id="main-wrapper">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-white">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Intersection</h4>
+                            </div>
+                            <div class="panel-body" id="relationTableComponent">
+                            </div>
+                        </div>
+
+                        <div class="panel panel-white">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Relation List</h4>
+                            </div>
+                            <div class="panel-body" id="relationList">
+
+                            </div>
+                            
+                            <div class="panel-body">
+                                <img src="assets/img/giphy.gif">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="panel panel-white">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Add new person</h4>
+                            </div>
+                            <div class="panel-body">
+                                <form id="newborn">
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" maxlength="10" placeholder="Enter name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastnameSelect">Select lastname</label>
+                                        <div>
+                                            <select class="form-control m-b-sm" name="lastname" id="lastnameSelect">
+                                                <option>Montecchi</option>
+                                                <option>Capuleti</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-inline">
+                                        <button type="submit" class="btn btn-info">Save</button>
+                                        <div class="form-group">
+                                            <label class="hidden" id="alertBox">
+                                                We already have <b id="existingName"></b>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-white">
+                            <div class="panel-heading clearfix">
+                                <h4 class="panel-title">Family lists</h4>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="col-md-4">
+                                    <div class="panel-heading clearfix">
+                                        <h4 class="panel-title">Montecchi</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Name</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="MontecchiFamilyListTable"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="panel-heading clearfix">
+                                        <h4 class="panel-title">Capuleti</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Name</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="CapuletiFamilyListTable"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="panel-heading clearfix">
+                                        <h4 class="panel-title">Relation</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <button type="button" id="attractionRelationBtn" class="btn btn-success btn-addon m-b-sm btn-rounded btn-sm">
+                                            <i class="fa fa-plus"></i> Attraction
+                                        </button>
+                                        <button type="button" id="disaffectionRelationBtn" class="btn btn-danger btn-addon m-b-sm btn-rounded btn-sm">
+                                            <i class="fa fa-plus"></i> Disaffection
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

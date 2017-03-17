@@ -1,0 +1,22 @@
+.active{
+    font-weight: 900 !important;
+    color: darkred;
+    text-shadow: #0a0a0a;
+}
+.personName{
+    font-weight: 300;
+    cursor: pointer;
+}
+.cell{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background: lightskyblue;
+    text-align: center;
+    float: left;
+    margin: 1px;
+    line-height: 3;
+}
+.clear{
+    clear: both;
+}
